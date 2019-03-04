@@ -4,6 +4,8 @@ GUI nedir biliyorsanız devam edelim.
 Python da GUI yazmak için Tkinter kullanılır. Şimdi de Tkinter nasıl kullanılır onu öğrenmemiz gerekmekte. 
 Bunun içn şu site yardımcı olacaktır:  http://www.getgnu.org/gnulinux/gnulinux-ipuclari/python-gui-examples-tkinter-tutorial.html
 
+NOT 1
+
 ---> Tkinter kullanarak bir arayüz oluşturduk. Bu arayüzde Entry komutunu kullandık. Entry komutu tkinterin kullanıcıdan 
 giriş bilgisi almayı sağlıyor
 Yazdığımız bu gui de alınan bilgi SetAngle fonksiyonunda kullanılıyor. Bu bilgi integer veri tipinde olmalı.
@@ -13,3 +15,7 @@ Konsoldan int kullanıcı girişini nasıl alıyorduk ? int(input("Bir sayi yazi
 int(sayi.get()) . Bu komut hata veriyor. İnternette derin araştırmalar yapmama rağmen bir türlü tkinter GUI den integer veri
 alma yöntemini bulamamıştım. En sonunda bir forum sitesinden ( kim olduğunu keşke kaydetseydim) bir kişinin yazdığı çözümü buldum :
 int(str(sayi.get())) . Sonunda veri integer'a çevirildi. Artık bu veriyi SetAngle fonksiyonuna yerleştirebiliriz.
+
+NOT 2
+-----> time sleep() ve after() fonksiyonu farkı nedir ? 
+sleep() fonksiyonu sistemi bekleme süresi boyunca durduran fonksiyondur. after() ise tkinter arayüzü kütphanesinde bulunan, fonksiyon çağırmada ya da işlemler arasında bekleme süresi oluşturma ya da belirli sürelerde belirli komutları gerçekleştirmeyi sağlayan fonksiyondur. Tkinter arayüzü kullanırken sleep fonksiyonu kullanılmamalıdır. bu GUI de arayüzün hata vermesine ya da düzgün çalışmamasına sebep olabilir. Bunun yerine after kullanarak sistemi bekletmeden fonksiyonlar arası beklemeyi sağlayabiliriz.
