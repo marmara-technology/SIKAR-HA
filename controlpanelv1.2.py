@@ -86,7 +86,8 @@ def kayit():
     stop=False
     kayit = Tk()
     kayit.title("Kayit Ekrani")
-    kayit.geometry('600x200')
+    kayit.geometry('520x200')
+    kayit.minsize(width=520,height=200)
     lbl=Label(kayit,text="  Kaydedilecek Pozisyonu Giriniz")
     lbl.grid(column=0,row=0,columnspan=4)
     lbl=Label(kayit,text="Bekleme Süresini Giriniz",width='20')
