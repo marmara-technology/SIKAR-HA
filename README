@@ -1,4 +1,6 @@
 # SIKAR HA! GELİŞTİRİCİ GÜNLÜKLERİ
+SON GÜCELLEME
+
 version 0.0.1 : 26 Feb 2019 / Giving an angle parameter to servo than recording it and make servo loops at zero position and recorded position.
 
 --TR--
@@ -15,3 +17,15 @@ Update v0.0.4 10 Mart 2019 / Robotun mekanik parçaları geldi. GUI'de şu deği
           2) Mainmenu düzenlendi, github sayfa linki koyuldu.
           3) Slider ile konum bilgisi gönderme penceresi eklendi.
           4)Diğer menü fonksiyonları için taslaklar oluşturuldu.
+          
+Update v0.1.0 26 Mart 2019 / Yeni sürüm ! Daha öncelerde robotu RasPi kullanarak hareket ettirdik. Şimdi ise Arduino'yu bir motor 
+sürücü gibi kullanarak robotumuzu kontrol edeceğiz. Bu yeni kontrol programında öncelikle Arduino'yu potla robotu kontrol
+etmek üzere kodluyoruz. Bu kodlar repodaki " Arduino Motor Sürme " adlı dosyada bulunmakta. 
+Arduino kodları basit bir pot ile servo kontrol etme kodlarıdır. Ancak bundan farklı olarak Serial heaberleşme ile RasPi ye 
+motorların konum bilgilerini gönderiyoruz. Bunun için şöyle bir algoritma gerçekleştirdik :
+1- Arduino kayıt butonuna basıldığında 4 motordan 4 farklı bilgiyi Raspi ye gönderecek.
+2-Raspi ise bu 4 bilgiyi motorlar için oluşturduğumuz register değişkenlerine aktaracak.
+ Bunu gerçekleştirmek için iki kontrolcü arasında senkronizasyonu doğru sağlamış olmamız gerekiyor. 
+ Yazdığımız kodda senkronizasyon sağlamak için Raspi ye counter değeri yazdık. Bu sayıcı arduinodan gelen bilgi sayısını kontrol
+ edecek böylece gelen bilgiler sırayla ve birbirine karışmadan registerlara aktarılacak:
+Arduino - Motorun açı değerini gönder delay(100) saniye bekle Raspi- ilk bilgiyi registera yaz ve sayıcıyı 1 arttır.
