@@ -87,7 +87,7 @@ def kayit():
     kayit = Tk()
     kayit.title("Kayit Ekrani")
     kayit.geometry('520x200')
-    kayit.minsize(width=520,height=200)
+    kayit.minsize(width=520,height=200)  // GUNCELLEME
     lbl=Label(kayit,text="  Kaydedilecek Pozisyonu Giriniz")
     lbl.grid(column=0,row=0,columnspan=4)
     lbl=Label(kayit,text="Bekleme Süresini Giriniz",width='20')
@@ -238,7 +238,18 @@ def slider():
     grpbutton.grid(column=30,row=181)
     slide.mainloop()
 
-
+def helphareket():  // GUNCELLEME
+  helpme= Tk()
+  helpme.title('YARDIM')
+  helpme.geometry('500x200')
+  yardim = ' Öncelikle kontrol potlarını kullanarak robotu istediğiniz konuma getiriniz.\n\
+             Ardından control panel menuden konum al a tıklayınız.\n \
+             Açılan pencereden Serial Başlat butonuna basın ve kayıt butonunu aktif edin.\n \
+             Butona bastığınızda kayıt işlemi tamamlanacak ve bilgi kutucuğu karşınıza çıkacak.\n\
+             Eğer açı değerleriniz doğru ise onaylayın ve işleminize devam edin.'
+  Label(helpme,text=yardim).grid(column=0,row=0)
+  Button(helpme,text='Anladım',command=helpme.destroy).grid(column=0,row=1)
+ 
 def donothing():
     messagebox.showinfo('BİLGİ','SEKME ŞU ANDA BOŞ. YAKINDA İÇERİK EKLENECEK')
 
@@ -266,7 +277,7 @@ kayitmenu.add_command(label="Hareket Kaydet",command=kayit)
 menubar.add_cascade(label="Kayit",menu=kayitmenu)
 menubar.add_cascade(label="Hareket", menu=editmenu)
 helpmenu = Menu(menubar, tearoff=0)
-helpmenu.add_command(label="Hareket?", command=donothing)
+helpmenu.add_command(label="Hareket?", command=helphareket) // GUNCELLEME
 helpmenu.add_command(label="Hakkında", command=donothing)
 menubar.add_cascade(label="Yardım", menu=helpmenu)
 
@@ -285,6 +296,7 @@ def github():
 
 infobtn=Button(pencere,text='GITHUB SAYFASI',fg='yellow',bg='blue',font=("Arial",16),command=github).pack()
 signature=Label(pencere,text="ogibalboa was here").pack()
+Button(pencere,text='KAPAT',command=pencere.destroy,fg='blue',bg='yellow').pack()
 pencere.config(menu=menubar) 
 pencere.mainloop()
 
