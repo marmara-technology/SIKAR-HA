@@ -22,9 +22,10 @@ Yeni sürüm ! Daha öncelerde robotu RasPi kullanarak hareket ettirdik. Şimdi 
 sürücü gibi kullanarak robotumuzu kontrol edeceğiz. Bu yeni kontrol programında öncelikle Arduino'yu potla robotu kontrol
 etmek üzere kodluyoruz. Bu kodlar repodaki " Arduino Motor Sürme " adlı dosyada bulunmakta. 
 Arduino kodları basit bir pot ile servo kontrol etme kodlarıdır. Ancak bundan farklı olarak Serial heaberleşme ile RasPi ye 
-motorların konum bilgilerini gönderiyoruz. Bunun için şöyle bir algoritma gerçekleştirdik :
-1- Arduino kayıt butonuna basıldığında 4 motordan 4 farklı bilgiyi Raspi ye gönderecek.
-2-Raspi ise bu 4 bilgiyi motorlar için oluşturduğumuz register değişkenlerine aktaracak.
+motorların konum bilgilerini gönderiyoruz. 
+### Bunun için şöyle bir algoritma gerçekleştirdik :
+1.Arduino kayıt butonuna basıldığında 4 motordan 4 farklı bilgiyi Raspi ye gönderecek.
+2.Raspi ise bu 4 bilgiyi motorlar için oluşturduğumuz register değişkenlerine aktaracak.
  Bunu gerçekleştirmek için iki kontrolcü arasında senkronizasyonu doğru sağlamış olmamız gerekiyor. 
  Yazdığımız kodda senkronizasyon sağlamak için Raspi ye counter değeri yazdık. Bu sayıcı arduinodan gelen bilgi sayısını kontrol
  edecek böylece gelen bilgiler sırayla ve birbirine karışmadan registerlara aktarılacak:
