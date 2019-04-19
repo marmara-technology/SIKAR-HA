@@ -1,23 +1,24 @@
 # SIKAR HA! GELİŞTİRİCİ GÜNLÜKLERİ
-
-version 0.0.1 : 26 Feb 2019 / Giving an angle parameter to servo than recording it and make servo loops at zero position and recorded position.
-
 # --TR--
 versiyon 0.0.1 26 Şubat 2019 / Servoya açı parametresi verilip kaydedilir ve servonun "0" pozisyonundan kayıtlı pozisyona döngüde olması sağlanır.
 
-Update- v0.0.2 28 Şubat 2019 / "SIKAR HA!" için GUI yazmaya başladık. İlk hali ControlPanelv1 dosyasındadır. Açıklamaları GUI adlı branch'dan bulabilirsiniz.
+## Update- v0.0.2 28 Şubat 2019
+"SIKAR HA!" için GUI yazmaya başladık. İlk hali ControlPanelv1 dosyasındadır. Açıklamaları GUI adlı branch'dan bulabilirsiniz.
 
-Update v0.0.3 4 Mart 2019 / GUI temel fonksiyonları yerine getirmek üzere kodlandı. "ControlPanelv1.2". 
+## Update v0.0.3 4 Mart 2019 
+GUI temel fonksiyonları yerine getirmek üzere kodlandı. "ControlPanelv1.2". 
 İerlemeye devam etmeden önce robotun mekanik kısmına çalışmak gerekiyor.
 Mekanik kısım tamamlandıktan sonra yeni bir güncelleme ile görüşmek üzere.
 
-Update v0.0.4 10 Mart 2019 / Robotun mekanik parçaları geldi. GUI'de şu değişiklikler yapıldı :
+## Update v0.0.4 10 Mart 2019
+Robotun mekanik parçaları geldi. GUI'de şu değişiklikler yapıldı :
           1) Menu toolbar eklendi.
           2) Mainmenu düzenlendi, github sayfa linki koyuldu.
           3) Slider ile konum bilgisi gönderme penceresi eklendi.
           4)Diğer menü fonksiyonları için taslaklar oluşturuldu.
           
-Update v0.1.0 26 Mart 2019 / Yeni sürüm ! Daha öncelerde robotu RasPi kullanarak hareket ettirdik. Şimdi ise Arduino'yu bir motor 
+## Update v0.1.0 26 Mart 2019
+Yeni sürüm ! Daha öncelerde robotu RasPi kullanarak hareket ettirdik. Şimdi ise Arduino'yu bir motor
 sürücü gibi kullanarak robotumuzu kontrol edeceğiz. Bu yeni kontrol programında öncelikle Arduino'yu potla robotu kontrol
 etmek üzere kodluyoruz. Bu kodlar repodaki " Arduino Motor Sürme " adlı dosyada bulunmakta. 
 Arduino kodları basit bir pot ile servo kontrol etme kodlarıdır. Ancak bundan farklı olarak Serial heaberleşme ile RasPi ye 
