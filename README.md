@@ -11,11 +11,11 @@ GUI temel fonksiyonları yerine getirmek üzere kodlandı. "ControlPanelv1.2".
 Mekanik kısım tamamlandıktan sonra yeni bir güncelleme ile görüşmek üzere.
 
 ## Update v0.0.4 10 Mart 2019
-Robotun mekanik parçaları geldi. GUI'de şu değişiklikler yapıldı :
-          1. Menu toolbar eklendi.
-          1. Mainmenu düzenlendi, github sayfa linki koyuldu.
-          1. Slider ile konum bilgisi gönderme penceresi eklendi.
-          1. Diğer menü fonksiyonları için taslaklar oluşturuldu.
+Robotun mekanik parçaları geldi. GUI'de şu değişiklikler yapıldı : 
+1. Menu toolbar eklendi.
+1. Mainmenu düzenlendi, github sayfa linki koyuldu.
+1. Slider ile konum bilgisi gönderme penceresi eklendi.
+1. Diğer menü fonksiyonları için taslaklar oluşturuldu.
           
 ## Update v0.1.0 26 Mart 2019
 Yeni sürüm ! Daha öncelerde robotu RasPi kullanarak hareket ettirdik. Şimdi ise Arduino'yu bir motor
