@@ -13,9 +13,9 @@ Mekanik kısım tamamlandıktan sonra yeni bir güncelleme ile görüşmek üzer
 ## Update v0.0.4 10 Mart 2019
 Robotun mekanik parçaları geldi. GUI'de şu değişiklikler yapıldı :
           1. Menu toolbar eklendi.
-          2. Mainmenu düzenlendi, github sayfa linki koyuldu.
-          3. Slider ile konum bilgisi gönderme penceresi eklendi.
-          4. Diğer menü fonksiyonları için taslaklar oluşturuldu.
+          1. Mainmenu düzenlendi, github sayfa linki koyuldu.
+          1. Slider ile konum bilgisi gönderme penceresi eklendi.
+          1. Diğer menü fonksiyonları için taslaklar oluşturuldu.
           
 ## Update v0.1.0 26 Mart 2019
 Yeni sürüm ! Daha öncelerde robotu RasPi kullanarak hareket ettirdik. Şimdi ise Arduino'yu bir motor
