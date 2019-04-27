@@ -5,8 +5,8 @@ Bu proje Servo motorlar ile hareket ettirilen bir robotun farklı metodlarla kon
 # Yayınlanmış Sürümler
 1. [Sürüm :  v0.0.1 -Servo Döndürmek-](#v0.0.1)
 2. [Sürüm :  v0.0.2 -GUI-](#v0.0.2)
-    a. [Sürüm :  v0.0.3 --](#v0.0.3)
-    b. [Sürüm :  v0.0.4](#v0.0.4)
+    1. [Sürüm :  v0.0.3 --](#v0.0.3)
+    2. [Sürüm :  v0.0.4](#v0.0.4)
 2. [Sürüm : v0.1.0 -Arduino ile Seri Haberleşme-](#v0.1.0)
  # Ek Paketler
  [Joystick ile Kontrol](#joystick)
