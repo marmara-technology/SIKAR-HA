@@ -30,3 +30,6 @@ motorların konum bilgilerini gönderiyoruz.
  Yazdığımız kodda senkronizasyon sağlamak için Raspi ye counter değeri yazdık. Bu sayıcı arduinodan gelen bilgi sayısını kontrol
  edecek böylece gelen bilgiler sırayla ve birbirine karışmadan registerlara aktarılacak:
 Arduino - Motorun açı değerini gönder delay(100) saniye bekle Raspi- ilk bilgiyi registera yaz ve sayıcıyı 1 arttır.
+
+## Update v0.1.1 27 Nisan 2019
+Bu zamana kadar robotu potansiyometre ile kontrol etmiştik. Artık robotu daha kolay kontrol etmek ve daha ince hareketleri gerçekleştirmek üzere Joystick kullanacağız ! Robotu joystick ile kontrol etmek için hala Arduino'yu bir motor sürücü olarak kullanıyoruz. Bununla beraber motorların pozisyonlarını da serial port aracılığıyla Raspberry Pi üzerine aktarıyoruz. Sonraki güncelleme de bu pozisyonları işlemek üzere kullanacağız. !
