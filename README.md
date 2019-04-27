@@ -12,11 +12,16 @@ Bu proje Servo motorlar ile hareket ettirilen bir robotun farklı metodlarla kon
  [Joystick ile Kontrol](#joystick)
  
  # YAKINDA
- 1.Raspberry'ye aktardığımız motor konum bilgilerini Arduino'ya geri göndererek robota hareket ezberletmek.
- 2.Robotun Gripper'ına bir kalem takarak şekil çizdirmek.
+ * Raspberry'ye aktardığımız motor konum bilgilerini Arduino'ya geri göndererek robota hareket ezberletmek.
+ * Robotun Gripper'ına bir kalem takarak şekil çizdirmek.
 
 ## v0.0.1 26 Şubat 2019 | Servo Döndürmek <a name="v0.0.1"></a>
 Servoya açı parametresi verilip kaydedilir ve servonun "0" pozisyonundan kayıtlı pozisyona döngüde olması sağlanır.
+
+## Nasıl Yapılır Videosu : 
+
+[![Raspberry ile Servo Kontrolü](http://img.youtube.com/vi/ZuVTEtgH9Ns/0.jpg)](https://www.youtube.com/watch?v=ZuVTEtgH9Ns)  
+
  
 ## Update- v0.0.2 28 Şubat 2019 | SIKAR-HA Kontrol Panel adıyla GUI Yazmaya Başladık <a name="v0.0.2"></a>
 "SIKAR HA!" için GUI yazmaya başladık. İlk hali ControlPanelv1 dosyasındadır. Açıklamaları GUI adlı branch'dan bulabilirsiniz.
