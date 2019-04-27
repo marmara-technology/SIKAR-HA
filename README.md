@@ -1,6 +1,6 @@
 # SIKAR HA! GELİŞTİRİCİ GÜNLÜKLERİ
 ## Güncel Verisyon :  v0.1.1
-Bu proje Servo motorlar ile yapılmış olan bir robotun farklı metodlarla kontrolü üzerine yapılmış bir "Robot Kontrol Ünitesi'dir". Amacımız robotun kontrol yöntemlerini araştırmak ve bunu bu konuda çalışma yapmak insanlara anlatmaktır.
+Bu proje Servo motorlar ile hareket ettirilen bir robotun farklı metodlarla kontrol edilmesi üzerine yapılmış bir "Robot Kontrol Ünitesi'dir". Amacımız robotun kontrol yöntemlerini araştırmak ve bunu bu konuda çalışma yapmak insanlara anlatmaktır.
 # --TR--
 ## v0.0.1 26 Şubat 2019 
 Servoya açı parametresi verilip kaydedilir ve servonun "0" pozisyonundan kayıtlı pozisyona döngüde olması sağlanır.
