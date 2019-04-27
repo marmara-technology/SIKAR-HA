@@ -1,4 +1,5 @@
 # SIKAR HA! GELİŞTİRİCİ GÜNLÜKLERİ
+## Güncel Verisyon :  v0.1.1
 # --TR--
 versiyon 0.0.1 26 Şubat 2019 / Servoya açı parametresi verilip kaydedilir ve servonun "0" pozisyonundan kayıtlı pozisyona döngüde olması sağlanır.
 
