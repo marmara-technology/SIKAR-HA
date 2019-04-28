@@ -59,3 +59,6 @@ Bu zamana kadar robotu potansiyometre ile kontrol etmiştik. Artık robotu daha 
 
 # RASPBERRY PI ve ARDUINO Haberleşmesi tamamlandı !! <a name = "v0.1.1"></a>
 Robotun konumunu Arduino üzerinden Raspberry Pi'ye aktarmayı başarmıştık. Ancak Raspberry üzerinde kayıtlı olan konumları Arduino'ya aktarıp robotu hareket ettirmek konusunda zorluklar yaşadık. Neyseki bu sorunu halledildi ve yeni sürüm karşınızda !
+* [Joystick ile Robot Kontrolü ve Hareket Ezberleme - Arduino Kodları](https://github.com/marmara-technology/SIKAR-HA/blob/master/Joystick_Hareket_Ezberleyici.ino)
+
+* [Raspberry Pi Kodları ( Control Panel'e henüz eklenmedi)](https://github.com/marmara-technology/SIKAR-HA/blob/master/Arduino%20Serial%20Kayit.py)
