@@ -8,13 +8,13 @@ Bu proje Servo motorlar ile hareket ettirilen bir robotun farklı metodlarla kon
     1. [Sürüm :  v0.0.3 -GUI Güncelleme-](#v0.0.3)
     2. [Sürüm :  v0.0.4 -GUI Güncelleme-](#v0.0.4)
 2. [Sürüm : v0.1.0 -Arduino ile Seri Haberleşme Denemeleri-](#v0.1.0)
-3. [Sürüm : v0.1.1 -Arduino Raspberry Pi ile Haberleşme ( BAŞARILI)-](#v0.1.1)
+    1. [Sürüm : v0.1.1 -Arduino Raspberry Pi ile Haberleşme ( BAŞARILI)-](#v0.1.1)
  # Ek Paketler
  [Joystick ile Kontrol](#joystick)
  
  # Yakında
- * Raspberry'ye aktardığımız motor konum bilgilerini Arduino'ya geri göndererek robota hareket ezberletmek.
- * Robotun Gripper'ına bir kalem takarak şekil çizdirmek.
+ * Raspberry'ye aktardığımız motor konum bilgilerini Arduino'ya geri göndererek robota hareket ezberletmek.(Tamamlandı)
+ * Robotun Gripper'ına bir kalem takarak şekil çizdirmek.(Çalışmalar devam ediyor)
 
 ## v0.0.1 26 Şubat 2019 | Servo Döndürmek <a name="v0.0.1"></a>
 Servoya açı parametresi verilip kaydedilir ve servonun "0" pozisyonundan kayıtlı pozisyona döngüde olması sağlanır.
@@ -57,4 +57,4 @@ motorların konum bilgilerini gönderiyoruz.
 Bu zamana kadar robotu potansiyometre ile kontrol etmiştik. Artık robotu daha kolay kontrol etmek ve daha ince hareketleri gerçekleştirmek üzere Joystick kullanacağız ! Robotu joystick ile kontrol etmek için hala Arduino'yu bir motor sürücü olarak kullanıyoruz. Bununla beraber motorların pozisyonlarını da serial port aracılığıyla Raspberry Pi üzerine aktarıyoruz. Sonraki güncelleme de bu pozisyonları işlemek üzere kullanacağız. !
 
 # RASPBERRY PI ve ARDUINO Haberleşmesi tamamlandı !! <a name = "v0.1.1"></a>
-Robotun konumunu Arduino üzerinden Raspberry Pi2ye aktarmayı başarmıştık. Ancak Raspberry üzerinde kayıtlı olan konumları arduino'ya aktarıp robotu hareket ettirmek konusunda zorluklar yaşadık. Neyseki bu sorunu halledildi ve yeni sürümkarşınızda !
+Robotun konumunu Arduino üzerinden Raspberry Pi'ye aktarmayı başarmıştık. Ancak Raspberry üzerinde kayıtlı olan konumları Arduino'ya aktarıp robotu hareket ettirmek konusunda zorluklar yaşadık. Neyseki bu sorunu halledildi ve yeni sürüm karşınızda !
