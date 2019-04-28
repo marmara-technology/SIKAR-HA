@@ -26,12 +26,12 @@ Servoya açı parametresi verilip kaydedilir ve servonun "0" pozisyonundan kayı
  
 ## Update v0.0.2 28 Şubat 2019 | SIKAR-HA Kontrol Panel adıyla GUI Yazmaya Başladık <a name="v0.0.2"></a>
 "SIKAR HA!" için GUI yazmaya başladık. İlk hali ControlPanelv1 dosyasındadır. Açıklamaları GUI adlı branch'dan bulabilirsiniz.
-
+* ![GUI-Mainmenu](https://github.com/marmara-technology/SIKAR-HA/blob/master/ScreenShots/mainmenu.png?raw=true"mainmenu.png")
 ### Update v0.0.3 4 Mart 2019 | GUI Güncelleme <a name="v0.0.3"></a>
 GUI temel fonksiyonları yerine getirmek üzere kodlandı. "ControlPanelv1.2". 
 İerlemeye devam etmeden önce robotun mekanik kısmına çalışmak gerekiyor.
 Mekanik kısım tamamlandıktan sonra yeni bir güncelleme ile görüşmek üzere.
-
+* ![GUI-Mainmenu](https://github.com/marmara-technology/SIKAR-HA/blob/master/ScreenShots/kayitv1.2.png?raw=true"kayit.png")
 ### Update v0.0.4 10 Mart 2019 | GUI Güncelleme <a name="v0.0.4"></a>
 Robotun mekanik parçaları geldi. GUI'de şu değişiklikler yapıldı : 
 1. Menu toolbar eklendi.
@@ -45,6 +45,7 @@ sürücü gibi kullanarak robotumuzu kontrol edeceğiz. Bu yeni kontrol program�
 etmek üzere kodluyoruz. Bu kodlar repodaki " Arduino Motor Sürme " adlı dosyada bulunmakta. 
 Arduino kodları basit bir pot ile servo kontrol etme kodlarıdır. Ancak bundan farklı olarak Serial heaberleşme ile RasPi ye 
 motorların konum bilgilerini gönderiyoruz. 
+* ![GUI-Mainmenu](https://github.com/marmara-technology/SIKAR-HA/blob/master/ScreenShots/serial%20kayit.png?raw=true"serikayit.png")
 #### Bunun için şöyle bir algoritma gerçekleştirdik :
 1. Arduino kayıt butonuna basıldığında 4 motordan 4 farklı bilgiyi Raspi ye gönderecek.
 2. Raspi ise bu 4 bilgiyi motorlar için oluşturduğumuz register değişkenlerine aktaracak.
