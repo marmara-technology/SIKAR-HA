@@ -4,7 +4,6 @@
 int button=12;
 int led = 13;
 int buttonst= 0;
-int tkr =1;
 int counter=0;
 int i;
 int Play=10;
