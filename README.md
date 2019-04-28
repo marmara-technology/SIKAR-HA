@@ -7,7 +7,8 @@ Bu proje Servo motorlar ile hareket ettirilen bir robotun farklı metodlarla kon
 2. [Sürüm :  v0.0.2 -SIKAR-HA Kontrol Panel adıyla GUI Yazdık-](#v0.0.2)
     1. [Sürüm :  v0.0.3 -GUI Güncelleme-](#v0.0.3)
     2. [Sürüm :  v0.0.4 -GUI Güncelleme-](#v0.0.4)
-2. [Sürüm : v0.1.0 -Arduino ile Seri Haberleşme-](#v0.1.0)
+2. [Sürüm : v0.1.0 -Arduino ile Seri Haberleşme Denemeleri-](#v0.1.0)
+3. [Sürüm : v0.1.1 -Arduino Raspberry Pi ile Haberleşme ( BAŞARILI)-](#v0.1.1)
  # Ek Paketler
  [Joystick ile Kontrol](#joystick)
  
@@ -48,10 +49,12 @@ motorların konum bilgilerini gönderiyoruz.
 1. Arduino kayıt butonuna basıldığında 4 motordan 4 farklı bilgiyi Raspi ye gönderecek.
 2. Raspi ise bu 4 bilgiyi motorlar için oluşturduğumuz register değişkenlerine aktaracak.
  Bunu gerçekleştirmek için iki kontrolcü arasında senkronizasyonu doğru sağlamış olmamız gerekiyor. 
- Yazdığımız kodda senkronizasyon sağlamak için Raspi ye counter değeri yazdık. Bu sayıcı arduinodan gelen bilgi sayısını kontrol
- edecek böylece gelen bilgiler sırayla ve birbirine karışmadan registerlara aktarılacak:
+ Yazdığımız kodda senkronizasyon sağlamak için Raspi ye counter değeri yazdık. Bu sayıcı arduinodan gelen bilgi sayısını kontrol edecek böylece gelen bilgiler sırayla ve birbirine karışmadan registerlara aktarılacak:
 * Arduino ---> Motorun açı değerini gönder ve 100 ms bekle. 
 * RasPi   ---> Alınan bilgiyi registera yaz ve sayıcıyı 1 arttır ve 100 ms bekle.
 
 # Joystick Ek Paket  27 Nisan 2019 <a name="joystick"></a>
 Bu zamana kadar robotu potansiyometre ile kontrol etmiştik. Artık robotu daha kolay kontrol etmek ve daha ince hareketleri gerçekleştirmek üzere Joystick kullanacağız ! Robotu joystick ile kontrol etmek için hala Arduino'yu bir motor sürücü olarak kullanıyoruz. Bununla beraber motorların pozisyonlarını da serial port aracılığıyla Raspberry Pi üzerine aktarıyoruz. Sonraki güncelleme de bu pozisyonları işlemek üzere kullanacağız. !
+
+# RASPBERRY PI ve ARDUINO Haberleşmesi tamamlandı !! <a name = "v0.1.1"></a>
+Robotun konumunu Arduino üzerinden Raspberry Pi2ye aktarmayı başarmıştık. Ancak Raspberry üzerinde kayıtlı olan konumları arduino'ya aktarıp robotu hareket ettirmek konusunda zorluklar yaşadık. Neyseki bu sorunu halledildi ve yeni sürümkarşınızda !
