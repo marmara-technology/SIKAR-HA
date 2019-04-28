@@ -57,7 +57,7 @@ motorların konum bilgilerini gönderiyoruz.
 # Joystick Ek Paket  27 Nisan 2019 <a name="joystick"></a>
 Bu zamana kadar robotu potansiyometre ile kontrol etmiştik. Artık robotu daha kolay kontrol etmek ve daha ince hareketleri gerçekleştirmek üzere Joystick kullanacağız ! Robotu joystick ile kontrol etmek için hala Arduino'yu bir motor sürücü olarak kullanıyoruz. Bununla beraber motorların pozisyonlarını da serial port aracılığıyla Raspberry Pi üzerine aktarıyoruz. Sonraki güncelleme de bu pozisyonları işlemek üzere kullanacağız. !
 
-# RASPBERRY PI ve ARDUINO Haberleşmesi tamamlandı !! <a name = "v0.1.1"></a>
+# Raspberry ve Arduino Haberleşmesi tamamlandı !! 28 Nisan 2019 <a name = "v0.1.1"></a>
 Robotun konumunu Arduino üzerinden Raspberry Pi'ye aktarmayı başarmıştık. Ancak Raspberry üzerinde kayıtlı olan konumları Arduino'ya aktarıp robotu hareket ettirmek konusunda zorluklar yaşadık. Neyseki bu sorunu halledildi ve yeni sürüm karşınızda !
 * [Joystick ile Robot Kontrolü ve Hareket Ezberleme - Arduino Kodları](https://github.com/marmara-technology/SIKAR-HA/blob/master/Joystick_Hareket_Ezberleyici.ino)
 
