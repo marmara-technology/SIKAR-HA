@@ -39,6 +39,7 @@ Robotun mekanik parçaları geldi. GUI'de şu değişiklikler yapıldı :
 1. Slider ile konum bilgisi gönderme penceresi eklendi.
 1. Diğer menü fonksiyonları için taslaklar oluşturuldu.
           
+* [ControlPanel v1.2 Python kodları](https://github.com/marmara-technology/SIKAR-HA/blob/master/controlpanelv1.2.py)
 ## Update v0.1.0 26 Mart 2019 | Arduino ile Seri Haberleşme <a name="v0.1.0"></a>
 Yeni sürüm ! Daha öncelerde robotu RasPi kullanarak hareket ettirdik. Şimdi ise Arduino'yu bir motor
 sürücü gibi kullanarak robotumuzu kontrol edeceğiz. Bu yeni kontrol programında öncelikle Arduino'yu potla robotu kontrol
