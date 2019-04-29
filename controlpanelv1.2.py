@@ -22,7 +22,7 @@ GPIO.setup(7,GPIO.OUT)
 pwm3=GPIO.PWM(7,50)
 pwm3.start(0)
 
-#SERVO SIGNAL CODES
+#SERVO SINYAL KODLARI
 def SetAngle(angle):  # Angle paramater will be got from user
     duty = angle / 18 + 2  #Converting angle to duty
     GPIO.output(3, True)   # OUTPUT is high along the duty length
@@ -52,8 +52,8 @@ def ServoOn():
     x=int(str(angle1.get()))
     y=int(str(angle2.get()))
     if x>180 or y>180:
-     messagebox.showerror('TEKİLLİK HATASI', 'Verilebilecek en büyük açı 180 derecedir.')
-     return None
+          messagebox.showerror('TEKİLLİK HATASI', 'Verilebilecek en büyük açı 180 derecedir.')
+          return None
     SetAngle(x)
     SetAngle2(y)
 ##servoOn fonks sonu
@@ -101,11 +101,11 @@ def kayit():
         timvar=float(str(timnt.get()))
         timvar*=1000
         if timvar>400:
-         status=True
-         inf='Zaman degeri kabul mü? :'+ str(status)
-         Label(kayit,text=inf).grid(column=10,row=15)
-         timvar=int(timvar)
-         return True
+             status=True
+             inf='Zaman degeri kabul mü? :'+ str(status)
+             Label(kayit,text=inf).grid(column=10,row=15)
+             timvar=int(timvar)
+             return True
         else:
             status=False
             inf2='Zaman degeri kabul mü? :' + str(status)
@@ -128,13 +128,13 @@ def kayit():
     def regOn():
         if timereg()==True and tkrreg()==True:
           for x in range(tkrvar):  
-           SetAngle(regvar)
-           SetAngle2(regvar2)
-           kayit.after(timvar)
-           SetAngle(0)
-           SetAngle2(0)
-           if x==tkrvar-1:
-               messagebox.showinfo("Durum","Kayıt İşlemi Tamamlandı")
+             SetAngle(regvar)
+             SetAngle2(regvar2)
+             kayit.after(timvar)
+             SetAngle(0)
+             SetAngle2(0)
+             if x==tkrvar-1:
+                     messagebox.showinfo("Durum","Kayıt İşlemi Tamamlandı")
                
         else:
             messagebox.showerror('EKSIK PARAMETRE','Lütfen gerekli parametreleri tam olarak giriniz')
