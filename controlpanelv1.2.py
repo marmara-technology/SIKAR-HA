@@ -238,7 +238,7 @@ def slider():
     grpbutton.grid(column=30,row=181)
     slide.mainloop()
 
-def helphareket():  // GUNCELLEME
+def helphareket():  # GUNCELLEME
   helpme= Tk()
   helpme.title('YARDIM')
   helpme.geometry('500x200')
@@ -277,7 +277,7 @@ kayitmenu.add_command(label="Hareket Kaydet",command=kayit)
 menubar.add_cascade(label="Kayit",menu=kayitmenu)
 menubar.add_cascade(label="Hareket", menu=editmenu)
 helpmenu = Menu(menubar, tearoff=0)
-helpmenu.add_command(label="Hareket?", command=helphareket) // GUNCELLEME
+helpmenu.add_command(label="Hareket?", command=helphareket) # GUNCELLEME
 helpmenu.add_command(label="Hakkında", command=donothing)
 menubar.add_cascade(label="Yardım", menu=helpmenu)
 
