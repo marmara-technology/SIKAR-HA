@@ -119,8 +119,6 @@ def bos():
 serial=Button(arduino,text='Serial Port Aç',fg='yellow',bg='blue',font = 'Arial',command=SerialRead,height = 2)
 serial.grid(column =0,row=1)
 Label(text='Kayıtlı Olan Pozisyonlar',fg='black',bg='yellow',font='Arial',height=2).grid(column = 1, row = 2)
-#bkayit1=Button(text='1. Pozisyon',command=kayit)
-#bkayit1.grid(column=1,row=3,sticky=W)
 bkayitbaslat=Button(text='Kayıt Başlat',fg='yellow',bg='blue',font='Arial',height=2,command=KayitBaslat)
 bkayitbaslat.grid(column=3,row=1)
 
