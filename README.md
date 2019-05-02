@@ -15,7 +15,8 @@
  
  # Yakında
  * Raspberry'ye aktardığımız motor konum bilgilerini Arduino'ya geri göndererek robota hareket ezberletmek.(Tamamlandı)
- * Robotun Gripper'ına bir kalem takarak şekil çizdirmek.(Çalışmalar devam ediyor)
+ * Raspberry'de kaydedilen pozisyonları bir save dosyasında saklayarak programı yeniden açıldığında çalıştırmak.(Çalışmalar devam ediyor)
+ * Robotun Gripper'ına bir kalem takarak şekil çizdirmek.(Yakında)
 
 ## v0.0.1 26 Şubat 2019 | Servo Döndürmek <a name="v0.0.1"></a>
 Servoya açı parametresi verilip kaydedilir ve servonun "0" pozisyonundan kayıtlı pozisyona döngüde olması sağlanır.
