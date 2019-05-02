@@ -4,7 +4,7 @@
 int button=12;
 int led = 13;
 int buttonst= 0;
-int counter=0;
+int tkr =1;
 int i;
 int Play=10;
 int playstate = 0;
@@ -87,21 +87,16 @@ if (Serial.available() && counter == 0){
  myatay2=Serial.parseInt();
  mdikey2 = Serial.parseInt();
  mgripper2 = Serial.parseInt();
- counter = 1;
-}
-if (counter ==1) {
   while(mbase != mbase2) {
   if(mbase>mbase2) mbase-=1;
   else {mbase+=1;}
   base.write(mbase);
-  delay(5);
  }
  
  while(myatay2!=myatay) {
    if (myatay>myatay2) myatay-=1;
    else {myatay+=1;} 
    yatay.write(myatay);
- delay(5);
  }
  
  
@@ -109,19 +104,15 @@ if (counter ==1) {
    if(mdikey>mdikey2) mdikey-=1;
    else { mdikey+=1; }
  dikey.write(mdikey);
- delay(5);
  }
 
- counter =0;
-} 
 }
 else digitalWrite(led2,LOW);
 }
-
+}
 
 
 void HareketEt() 
-
 {
  if (x1pos > 900 && mbase<180) {
   mbase+=1;
@@ -180,5 +171,3 @@ void VerileriGonder() {
  Serial.println(mgripper);
   delay(1500);
 }
-// RASPBERRY ÜZERİNDEKİ KAYITLI POZİSYONLARI ARDUİNOYA AKTAR
-
