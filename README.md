@@ -31,7 +31,7 @@ Servoya açı parametresi verilip kaydedilir ve servonun "0" pozisyonundan kayı
 * ![GUI-Mainmenu](https://github.com/marmara-technology/SIKAR-HA/blob/master/ScreenShots/mainmenu.png?raw=true"mainmenu.png")
 ### Update v0.0.3 4 Mart 2019 | GUI Güncelleme <a name="v0.0.3"></a>
     GUI temel fonksiyonları yerine getirmek üzere kodlandı. "ControlPanelv1.2". 
-İerlemeye devam etmeden önce robotun mekanik kısmına çalışmak gerekiyor.
+İlerlemeye devam etmeden önce robotun mekanik kısmına çalışmak gerekiyor.
 Mekanik kısım tamamlandıktan sonra yeni bir güncelleme ile görüşmek üzere.
 * ![GUI-Mainmenu](https://github.com/marmara-technology/SIKAR-HA/blob/master/ScreenShots/kayitv1.2.png?raw=true"kayit.png")
 ### Update v0.0.4 10 Mart 2019 | GUI Güncelleme <a name="v0.0.4"></a>
