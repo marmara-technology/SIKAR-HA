@@ -4,23 +4,50 @@ import tkinter
 from tkinter import *
 from tkinter import messagebox
 import RPi.GPIO as GPIO
+from tkinter import Menu
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BOARD) #Numbers GPIOs by physical location
 GPIO.setup(3,GPIO.OUT)
-GPIO.output(3,GPIO.HIGH)
+GPIO.output(3,GPIO.LOW)
+#ser = None
 ser= serial.Serial('/dev/ttyACM0',9600)
 time.sleep(1)
 arduino=Tk()
 arduino.title('KONUM KAYIT')
-arduino.geometry('400x200')
-arduino.minsize(height='200',width='400')
-Label(arduino,text='Robot Pozisyonu').grid(column=1,row=0)
+arduino.geometry('550x430')
+arduino.minsize(height='800',width='430')
+Label(arduino,text='Robot Konumlandırınız',height=2,font='Arial').grid(column = '1',row = '0')
+Label(arduino,text="KAYIT NO",fg = 'blue',bg='White',height = '4',width= 14,font=('times',20)).grid(column = 0,row = 6)
+Label(arduino,text= "KONUM BİLGİLERİ",bg = 'white',width = 17,height = '4',font=('times',20)).grid(column = 1,row=6)
 global reg
 reg=[]
 global counter1
 counter1 = 0
 global counter2
 counter2 = 0
+global kayitno
+kayitno = 0
+
+
+def Kayitlar():
+    kayitnumara = "Konum " + str(kayitno)
+    kayitdurum1=Label(arduino,text=kayitnumara,fg = 'blue',bg='White',height = '4',width= 14,font=('times',20)).grid(column = 0,row = 5+int(kayitno),sticky=E)
+    kayitlar = "Base Motor :"+str(base) + ("\nYatay Motor :")+ str(yatay) +("\nDikey Motor :") +str(dikey) +("\nGripper") + str(gripper)
+    kayitdurum = Label(arduino,text= kayitlar,bg = 'white',width = 17,font=('times',20)).grid(column = 1,row=5+int(kayitno),sticky = E)
+   
+
+def sil():
+    global kayitno
+    global x
+    
+    kayitno -=1
+    if kayitno<0:
+        kayitno=0
+        return None
+    for i in range (0,4):
+        reg.pop()
+    Label(arduino, text ="    KAYIT", bg ='white',width = 14,height = 4,font=('times',20)).grid( column = 0, row= 5 + int(kayitno) +1)
+    Label(arduino, text ="SİLİNDİ", bg ='white',width = 17,height = 4,font=('times',20)).grid( column = 1, row= 5 + int(kayitno) +1) 
 def KayitBaslat():
     
     if len(reg)<1:
@@ -30,18 +57,28 @@ def KayitBaslat():
             bilgi='Robot şu konumlara ilerleyecektir :' + str(reg)
             messagebox.showinfo('BAŞARILI!',bilgi)
             
-            for i in range (0,8):
+            for i in range(len(reg)):
                 a=reg[i]
                 
                 ser.write(str(a).encode())
                 
                 time.sleep(1.2)
                 i+=1
-                if i == 4:
+                if i%4 == 0:
                     time.sleep(2)
             
             return None
                
+def kayit():
+    global kayitno
+    reg.append(base)
+    reg.append(yatay)
+    reg.append(dikey)
+    reg.append(gripper)    
+    kayitno+=1
+    Kayitlar()
+    #bilgi1="Alınan açı bilgileri :\n" "Base Motor :"+str(brg) + ("\nYatay Motor :")+ str(yrg) +("\nDikey Motor 3 :") +str(drg) +("\nGripper  :") + str(grp)
+    #messagebox.showinfo(' POZİSYON 1',bilgi1)
     
 def SerialRead():
     global counter
@@ -51,6 +88,7 @@ def SerialRead():
     global gripper
     global grpkonum
     counter = 0
+    GPIO.output(3,GPIO.HIGH)
     while 1:
         if (counter==0):
             base=int(ser.readline())
@@ -67,56 +105,30 @@ def SerialRead():
             counter = 4
         if (counter==4):
             
-            bilgi="Alınan açı bilgileri :\n" "Base Motor :"+str(base) + ("\nYatay Motor :")+ str(yatay) +("\nDikey Motor :") +str(dikey) +("\nGripper") + str(gripper)
-            messagebox.showinfo(' KAYIT TAMAMLANDI',bilgi)
+            #bilgi="Alınan açı bilgileri :\n" "Base Motor :"+str(base) + ("\nYatay Motor :")+ str(yatay) +("\nDikey Motor :") +str(dikey) +("\nGripper") + str(gripper)
+            #messagebox.showinfo(' KAYIT TAMAMLANDI',bilgi)
             counter = 0
+            GPIO.output(3,GPIO.LOW)
             break
+    kayit()
 
-def kayit1():
-    global brg1
-    global yrg1
-    global drg1
-    global grp1
-    global counter1
-    if counter1 == 0:
-        brg1=base
-        yrg1=yatay
-        drg1=dikey
-        grp1=gripper
-        counter1 = 1
-        
-    reg.append(brg1)
-    reg.append(yrg1)
-    reg.append(drg1)
-    reg.append(grp1)
-        
-    bilgi1="Alınan açı bilgileri :\n" "Base Motor :"+str(brg1) + ("\nYatay Motor :")+ str(yrg1) +("\nDikey Motor 3 :") +str(drg1) +("\nGripper  :") + str(grp1)
-    messagebox.showinfo(' POZİSYON 1',bilgi1)
-def kayit2():
-    global counter1
-    global brg2
-    global yrg2
-    global drg2
-    global grp2
-    if counter1 == 1:
-        brg2=base
-        yrg2=yatay
-        drg2=dikey
-        grp2=gripper
-        counter1=2
-        reg.append(brg2)
-        reg.append(yrg2)
-        reg.append(drg2)
-        reg.append(grp2)
-    bilgi2="Alınan açı bilgileri :\n" "Base Motor :"+str(brg2) + ("\nYatay Motor :")+ str(yrg2) +("\nDikey Motor 3 :") +str(drg2) +("\nGripper") + str(grp2)
-    messagebox.showinfo(' POZİSYON 1',bilgi2)
-serial=Button(arduino,text='Serial Port Aç',command=SerialRead)
-serial.grid(column =1,row=1)
-Label(text='Kayıtlı Olan Pozisyonlar',fg='black',bg='yellow',font='Arial',height=2).grid(column=1,row=2)
-bkayit1=Button(text='1. Pozisyon',command=kayit1)
-bkayit1.grid(column=0,row=3,sticky=W)
-bkayit2=Button(text='2. Pozisyon',command=kayit2)
-bkayit2.grid(column=2,row=3,sticky=W)
 
+def bos():
+    return None
+
+serial=Button(arduino,text='Serial Port Aç',fg='yellow',bg='blue',font = 'Arial',command=SerialRead,height = 2)
+serial.grid(column =0,row=1)
+Label(text='Kayıtlı Olan Pozisyonlar',fg='black',bg='yellow',font='Arial',height=2).grid(column = 1, row = 2)
+#bkayit1=Button(text='1. Pozisyon',command=kayit)
+#bkayit1.grid(column=1,row=3,sticky=W)
 bkayitbaslat=Button(text='Kayıt Başlat',fg='yellow',bg='blue',font='Arial',height=2,command=KayitBaslat)
-bkayitbaslat.grid(column=1,row=4)
+bkayitbaslat.grid(column=3,row=1)
+
+gerial=Button(text='Geri Al ', font=('times',20),command = sil).grid(column = 1, row = 1)
+menubar = Menu(arduino)
+filemenu = Menu(menubar)
+filemenu.add_command(label ="Tüm Kayıtları Sil", command = bos)
+filemenu.add_command(label = " Bos",command =bos)
+menubar.add_cascade(label ="Kayit İşlemleri", menu = filemenu)
+arduino.config(menu=menubar)
+arduino.mainloop()
