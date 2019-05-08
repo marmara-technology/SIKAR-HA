@@ -69,4 +69,4 @@ Robotun konumunu Arduino üzerinden Raspberry Pi'ye aktarmayı başarmıştık. 
 # Serial Haberleşme ile Konum Kaydetme GUI Güncellemesi 2 Mayıs 2019 <a name = "v0.1.2"></a>
 
 Seri Haberleşme konusunu hallettikten sonra sıra bunu GUI'de programlamaya geldi. GUI üzerinde kaydedilen konumları aktif olarak gösteren Label'lar eklendi. Ve kaydedilen konumu silme özelliği eklendi. Raspberry'ye Arduino'dan gelen konum bilgileri register adındaki listeye yazılmakta. Her veri girşi yapıldığında aynı zamanda Label olarak bir str verisine de kaydediliyor. Böylece konum bilgilerini bilgisayar topluca alıyor ancak kullanıcı ayrı ayrı görüyor ve görsel olarak konumları görebiliyor. Buna ek olarak daha önce yazdığımız programlarda Serial haberleşme aktif olması için Arduino'ya bağlı bir buton kullanıyorduk. Ancak bundan sonra Seriali aktif ettiğimizde Raspi 3. pini Logic 1 konumuna getirecek ve böylece Arduino Raspberry'nin emri ile çalışacak.
-![Konumkayit](https://github.com/marmara-technology/SIKAR-HA/blob/master/ScreenShots/Konumkayit.png?raw=true)
+* ![Konumkayit](https://github.com/marmara-technology/SIKAR-HA/blob/master/ScreenShots/Konumkayit.png?raw=true)
