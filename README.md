@@ -1,6 +1,6 @@
 # SIKAR HA! GELİŞTİRİCİ GÜNLÜKLERİ
 ## Güncel Verisyon :  v0.1.2
-   Bu proje Servo motorlar ile hareket ettirilen bir robotun farklı metodlarla kontrol edilmesi üzerine yapılmış bir "Robot Kontrol Ünitesi'dir". Amacımız robotun kontrol yöntemlerini araştırmak ve bunu bu konuda çalışma yapmak insanlara anlatmaktır.
+   Bu proje Servo motorlar ile hareket ettirilen bir robotun farklı metodlarla kontrol edilmesi üzerine yapılmış bir "Robot Kontrol Ünitesi'dir". Amacımız robotun kontrol yöntemlerini araştırmak ve bu konuda çalışma yapmak insanlara kaynak oluşturmaktır.
    
 # Yayınlanmış Sürümler
 1. [Sürüm :  v0.0.1 -Servo Döndürmek-](#v0.0.1)
