@@ -9,8 +9,8 @@
     2. [Sürüm :  v0.0.4 -GUI Güncelleme-](#v0.0.4)
     2. [Sürüm : v0.1.0 -Arduino ile Seri Haberleşme Denemeleri-](#v0.1.0)
 3. [Sürüm : v0.1.1 -Arduino Raspberry Pi ile Haberleşme ( BAŞARILI)-](#v0.1.1)
-    2. [Sürüm : v0.1.2 -Serial Kayıt GUI-](#v0.1.2)
-    3. [Sürüm : v0.1.4 -Serial Kayıt GUI Güncelleme-](#v0.1.3)
+    1. [Sürüm : v0.1.2 -Serial Kayıt GUI-](#v0.1.2)
+    2. [Sürüm : v0.1.4 -Serial Kayıt GUI Güncelleme-](#v0.1.3)
     
 4. [Sürüm : v0.2 -Control Panel v0.2](#v0.2)
 
