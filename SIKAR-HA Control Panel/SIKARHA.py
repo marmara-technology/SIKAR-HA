@@ -36,7 +36,6 @@ def github():
 
 
 def donothing():
-    os.mkdir("anan")
     messagebox.showinfo('BİLGİ','SEKME ŞU ANDA BOŞ. YAKINDA İÇERİK EKLENECEK')
 
 pencere = Tk()
