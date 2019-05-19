@@ -11,7 +11,7 @@ Bu proje Servo motorlar ile hareket ettirilen bir robotun farklı metodlarla kon
 * ### [Sürüm : v0.1.0 -Arduino ile Seri Haberleşme Denemeleri-](#v0.1.0)
   * [Sürüm : v0.1.1 -Arduino Raspberry Pi ile Haberleşme ( BAŞARILI)-](#v0.1.1)
 
-* ### [Sürüm : v0.1.2 -Serial Kayıt GUI-](#v0.1.2)
+* #### [Sürüm : v0.1.2 -Serial Kayıt GUI-](#v0.1.2)
   * [Sürüm : v0.1.3 -Serial Kayıt GUI Güncelleme-](#v0.1.3)
 * ### [Sürüm : v0.2 -Control Panel v0.2](#v0.2)
 
@@ -27,7 +27,7 @@ Servoya açı parametresi verilip kaydedilir ve servonun "0" pozisyonundan kayı
 
 ### Nasıl Yapılır Videosu :
 
-* ![Servo döndürmek](http://img.youtube.com/vi/ZuVTEtgH9Ns/0.jpg)](http://www.youtube.com/watch?v=ZuVTEtgH9Ns)
+* [![Servo döndürmek](http://img.youtube.com/vi/ZuVTEtgH9Ns/0.jpg)](http://www.youtube.com/watch?v=ZuVTEtgH9Ns)
 
 ### Update v0.0.2 28 Şubat 2019 | SIKAR-HA Kontrol Panel adıyla GUI Yazmaya Başladık <a name="v0.0.2"></a>
 "SIKAR HA!" için GUI yazmaya başladık. İlk hali ControlPanelv1 dosyasındadır. Açıklamaları GUI adlı branch'dan bulabilirsiniz.
