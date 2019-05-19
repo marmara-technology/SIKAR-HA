@@ -16,7 +16,7 @@ Bu proje Servo motorlar ile hareket ettirilen bir robotun farklı metodlarla kon
 * ### [Sürüm : v0.2 -Control Panel v0.2](#v0.2)
 
 # Ek Paketler
-* [Joystick ile Kontrol](#joystick)
+* ### [Joystick ile Kontrol](#joystick)
 
 # Yakında
 Raspberry'ye aktardığımız motor konum bilgilerini Arduino'ya geri göndererek robota hareket ezberletmek.(Tamamlandı)
