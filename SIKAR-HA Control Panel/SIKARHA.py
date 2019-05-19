@@ -8,7 +8,7 @@ import os
 wait=None
 rec=None
 GPIO.setwarnings(False)
-GPIO.setmode(GPIO.BOARD) #Numbers GPIOs by physical location
+GPIO.setmode(GPIO.BOARD)
 def konumsal():
     os.chdir('Programlar')
     os.system('python3 konumgonder.py')
