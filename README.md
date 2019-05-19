@@ -1,12 +1,10 @@
-SIKAR HA! GELİŞTİRİCİ GÜNLÜKLERİ
+# SIKAR HA! GELİŞTİRİCİ GÜNLÜKLERİ
 Güncel Verisyon : v0.1.2
 Bu proje Servo motorlar ile hareket ettirilen bir robotun farklı metodlarla kontrol edilmesi üzerine yapılmış bir "Robot Kontrol Ünitesi'dir". Amacımız robotun kontrol yöntemlerini araştırmak ve bu konuda çalışma yapmak insanlara kaynak oluşturmaktır.
 
-Yayınlanmış Sürümler
-Sürüm : v0.0.1 -Servo Döndürmek-
-
-Sürüm : v0.0.2 -SIKAR-HA Kontrol Panel adıyla GUI Yazdık-
-
+## Yayınlanmış Sürümler
+[Sürüm : v0.0.1 -Servo Döndürmek-](#v0.0.1)
+[Sürüm : v0.0.2 -SIKAR-HA Kontrol Panel adıyla GUI Yazdık-](#v0.0.2)
 Sürüm : v0.0.3 -GUI Güncelleme-
 Sürüm : v0.0.4 -GUI Güncelleme-
 Sürüm : v0.1.0 -Arduino ile Seri Haberleşme Denemeleri-
@@ -16,24 +14,24 @@ Sürüm : v0.1.2 -Serial Kayıt GUI-
 Sürüm : v0.1.4 -Serial Kayıt GUI Güncelleme-
 Sürüm : v0.2 -Control Panel v0.2
 
-Ek Paketler
+## Ek Paketler
 Joystick ile Kontrol
 
-Yakında
+## Yakında
 Raspberry'ye aktardığımız motor konum bilgilerini Arduino'ya geri göndererek robota hareket ezberletmek.(Tamamlandı)
 Raspberry'de kaydedilen pozisyonları bir save dosyasında saklayarak programı yeniden açıldığında çalıştırmak.(Çalışmalar devam ediyor)
 Robotun Gripper'ına bir kalem takarak şekil çizdirmek.(Yakında)
-v0.0.1 26 Şubat 2019 | Servo Döndürmek
+### v0.0.1 26 Şubat 2019 | Servo Döndürmek <a name="v0.0.1"></a>
 Servoya açı parametresi verilip kaydedilir ve servonun "0" pozisyonundan kayıtlı pozisyona döngüde olması sağlanır.
 
 Nasıl Yapılır Videosu :
 Raspberry ile Servo Kontrolü
 
-Update v0.0.2 28 Şubat 2019 | SIKAR-HA Kontrol Panel adıyla GUI Yazmaya Başladık
+### Update v0.0.2 28 Şubat 2019 | SIKAR-HA Kontrol Panel adıyla GUI Yazmaya Başladık <a name="v0.0.2"></a>
 "SIKAR HA!" için GUI yazmaya başladık. İlk hali ControlPanelv1 dosyasındadır. Açıklamaları GUI adlı branch'dan bulabilirsiniz.
 
 GUI-Mainmenu
-Update v0.0.3 4 Mart 2019 | GUI Güncelleme
+### Update v0.0.3 4 Mart 2019 | GUI Güncelleme <a name="v0.0.3"></a>
 GUI temel fonksiyonları yerine getirmek üzere kodlandı. "ControlPanelv1.2". 
 İlerlemeye devam etmeden önce robotun mekanik kısmına çalışmak gerekiyor. Mekanik kısım tamamlandıktan sonra yeni bir güncelleme ile görüşmek üzere.
 
