@@ -30,7 +30,7 @@ def serkayit():
 def github():
     onay=messagebox.askokcancel('Yönlendirme', 'SIKARHA! Github sayfasına yönlendiriliyorsunuz. Onay ?')
     if onay == True:
-         webbrowser.open('https://github.com/OgiBalboa/servo')
+         webbrowser.open('https://github.com/marmara-technology/SIKAR-HA')
     else:
         return None
 
