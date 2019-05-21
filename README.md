@@ -73,6 +73,7 @@ Serial Kayit yapma otomatikleşti ve butonlar tamamen kalktı.
 Kayitli pozisyonları bir dizine kaydetme özelliği eklendi.
 Kayit dosyasını import etme ve bu dosyayı çalıştırma özelliği eklendi.
 Güncel dosya : [Serial Konum Kayit](https://github.com/marmara-technology/SIKAR-HA/tree/master/SIKAR-HA%20Control%20Panel)
+[Hareket Ezberleyici Modül Youtube Videosu](https://youtu.be/7Wulxo9lwis)
 ## Control Panel Güncelleme ! 14 Mayıs 2019 <a name="v0.2"></a>
 Program artık birden çok python dosyasına ayrıldı. Bu sayede kod karmaşıklığı ortadan kalktı ve kontrol metodları ayrı ayrı dosylarda saklandı.
 
