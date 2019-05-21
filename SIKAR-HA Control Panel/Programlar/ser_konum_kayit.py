@@ -9,26 +9,26 @@ from tkinter import filedialog
 import sys
 import os
 GPIO.setwarnings(False)
-GPIO.setmode(GPIO.BOARD) #Numbers GPIOs by physical location
+GPIO.setmode(GPIO.BOARD) 
 GPIO.setup(5,GPIO.OUT)
 GPIO.output(5,GPIO.LOW)
 #ser = None
 while True :
     try:
-        tries=0
-        if tries ==0:
+        deneme = 0
+        if deneme ==0:
             try:
               ser= serial.Serial('/dev/ttyACM0',9600)
               break
             except:
-                tries = 1
-        if tries == 1:
+                deneme = 1
+        if deneme == 1:
             try:
                 ser = serial.Serial('/dev/ttyACM1',9600)
                 break
             except:
-                tries = 2
-        if tries == 2:
+                deneme = 2
+        if deneme == 2:
             try:
                 ser=serial.Serial('/dev/ttyACM2',9600)
                 break
@@ -106,7 +106,7 @@ def kayit():
     #bilgi1="Alınan açı bilgileri :\n" "Base Motor :"+str(brg) + ("\nYatay Motor :")+ str(yrg) +("\nDikey Motor 3 :") +str(drg) +("\nGripper  :") + str(grp)
     #messagebox.showinfo(' POZİSYON 1',bilgi1)
     
-def SerialRead():
+def SerialOku():
     global counter
     global base
     global yatay
@@ -187,7 +187,7 @@ def dosya_ac():
 def bos():
     return None
 
-serial=Button(arduino,text='Serial Port Aç',fg='white',bg='blue',font = 'Arial',command=SerialRead,height = 2)
+serial=Button(arduino,text='Serial Port Aç',fg='white',bg='blue',font = 'Arial',command=SerialOku,height = 2)
 serial.grid(column =0,row=1)
 Label(text='Kayıtlı Olan Pozisyonlar',fg='black',bg='yellow',font='Arial',height=2).grid(column = 1, row = 2)
 #bkayit1=Button(text='1. Pozisyon',command=kayit)
