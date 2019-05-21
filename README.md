@@ -81,3 +81,39 @@ Kayıtlar isimli dosya ise kullanıcının kendi oluşturduğu programı kaydetm
 * [ Kotrol Panel Ana dosyası](https://github.com/marmara-technology/SIKAR-HA/blob/master/SIKAR-HA%20Control%20Panel/SIKARHA.py)
 
 * ![Controlpanel](https://github.com/marmara-technology/SIKAR-HA/blob/master/ScreenShots/controlpanel.png)
+
+## Serial Bağlantı ile ilgili Problem Giderildi 22 Mayıs 2019 <a name="v0.1.3"></a>
+Raspberry'nin serial portuna bağladığımız Arduino kablosunun adresi genellikle /dev/ttyACM0 , ACM1 veya ACM2 olmaktadır. Bu kablo her çıkarıldığında adres değişmektedir. Raspberry üzerinde seriali tanımlarken port bilgisini normalde şu şekilde gireriz :
+```python
+import serial
+ser= serial.Serial('/dev/ttyACM0',9600)
+```
+Ancak port değiştiğinde doğal olarak bu satır hata verecektir ve program çalışmayacaktır. Bu sorunu çözmek için her defasında serial portu kontrol edip python'da değiştirmek yerine şöyle bir çözüm geliştirdik :
+```python
+while True :
+    try:
+        deneme = 0
+        if deneme ==0:
+            try:
+              ser= serial.Serial('/dev/ttyACM0',9600)
+              break
+            except:
+                deneme = 1
+        if deneme == 1:
+            try:
+                ser = serial.Serial('/dev/ttyACM1',9600)
+                break
+            except:
+                deneme = 2
+        if deneme == 2:
+            try:
+                ser=serial.Serial('/dev/ttyACM2',9600)
+                break
+            except:
+                 print("HATA ! Lütfen Arduino serial kablosunu kontrol ediniz")
+                 break
+    except:
+        print("BAŞARISIZ")
+```         
+
+Bu yöntem sayesinde, portu bulana dek tüm olasılıkları deneyerek programı çalıştıracaktır.
