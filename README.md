@@ -85,6 +85,8 @@ Kayıtlar isimli dosya ise kullanıcının kendi oluşturduğu programı kaydetm
 
 * ![Controlpanel](https://github.com/marmara-technology/SIKAR-HA/blob/master/ScreenShots/controlpanel.png)
 
+* [![Control Panel](http://img.youtube.com/vi/TrD485RXhUU/0.jpg)](https://www.youtube.com/watch?v=TrD485RXhUU)
+
 ## Serial Bağlantı ile ilgili Problem Giderildi 22 Mayıs 2019 <a name="v0.1.3"></a>
 Raspberry'nin serial portuna bağladığımız Arduino kablosunun adresi genellikle /dev/ttyACM0 , ACM1 veya ACM2 olmaktadır. Bu kablo her çıkarıldığında adres değişmektedir. Raspberry üzerinde seriali tanımlarken port bilgisini normalde şu şekilde gireriz :
 ```python
