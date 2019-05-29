@@ -84,7 +84,7 @@ Kayıtlar isimli dosya ise kullanıcının kendi oluşturduğu programı kaydetm
 * [ Kotrol Panel Ana dosyası](https://github.com/marmara-technology/SIKAR-HA/blob/master/SIKAR-HA%20Control%20Panel/SIKARHA.py)
 
 * ![Controlpanel](https://github.com/marmara-technology/SIKAR-HA/blob/master/ScreenShots/controlpanel.png)
-
+### Control Panel ile Konum Kaydetmek - Video -
 * [![Control Panel](http://img.youtube.com/vi/TrD485RXhUU/0.jpg)](https://www.youtube.com/watch?v=TrD485RXhUU)
 
 ## Serial Bağlantı ile ilgili Problem Giderildi 22 Mayıs 2019 <a name="v0.1.3"></a>
