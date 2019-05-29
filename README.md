@@ -18,6 +18,8 @@ Bu proje Servo motorlar ile hareket ettirilen bir robotun farklı metodlarla kon
 # Ek Paketler
 * ### [Joystick ile Kontrol](#joystick)
 
+* ### [EMG Sinyalleri ile Kontrol](#myo)
+
 # Yakında
 * Raspberry'ye aktardığımız motor konum bilgilerini Arduino'ya geri göndererek robota hareket ezberletmek.(Tamamlandı)
 * Raspberry'de kaydedilen pozisyonları bir save dosyasında saklayarak programı yeniden açıldığında çalıştırmak.(Tamamlandı)
@@ -118,3 +120,6 @@ while True :
 ```         
 
 Bu yöntem sayesinde, portu bulana dek tüm olasılıkları deneyerek programı çalıştıracaktır.
+## Myo Armband ile koldaki EMG (Kas) sinyallerinin işlenmesi ve Robot Kontrolü 29 Mayıs 2019 <a name="myo"></a>
+* İçerik yakında düzenlenecek
+* [![Servo döndürmek](http://img.youtube.com/vi/xaBf3gU4Qsw/0.jpg)](https://www.youtube.com/watch?v=xaBf3gU4Qsw)
