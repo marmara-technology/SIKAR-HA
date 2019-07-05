@@ -123,5 +123,7 @@ while True :
 
 Bu yöntem sayesinde, portu bulana dek tüm olasılıkları deneyerek programı çalıştıracaktır.
 ## Myo Armband ile koldaki EMG (Kas) sinyallerinin işlenmesi ve Robot Kontrolü 29 Mayıs 2019 <a name="myo"></a>
-* İçerik yakında düzenlenecek
+* Myo Armband içerisinde emg ve IMU sensörleri bulunan kompakt bir yapıdır. Kendine ait yazılımı ile veya python üzerinde hazırlanmış kodları sayesinde bu sinyalleri işleyip kullanmak mümkün. 
+Kodların sahibi ben olmadığımdan dolayı burada paylaşamayacağım. 
+Ancak ileride IMU kullanarak özgün bir sistem tasarlanabilir . 
 * [![Servo döndürmek](http://img.youtube.com/vi/xaBf3gU4Qsw/0.jpg)](https://www.youtube.com/watch?v=xaBf3gU4Qsw)
