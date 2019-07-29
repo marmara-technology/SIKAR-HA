@@ -1,5 +1,5 @@
 # SIKAR HA! GELİŞTİRİCİ GÜNLÜKLERİ
-* ## Güncel Verisyon : v0.2
+* ## Güncel Versiyon : v0.2
 Bu proje Servo motorlar ile hareket ettirilen bir robotun farklı metodlarla kontrol edilmesi üzerine yapılmış bir "Robot Kontrol Ünitesi'dir". Amacımız robotun kontrol yöntemlerini araştırmak ve bu konuda çalışma yapmak isteyen insanlara kaynak oluşturmaktır.
 
 # Yayınlanmış Sürümler
@@ -21,9 +21,8 @@ Bu proje Servo motorlar ile hareket ettirilen bir robotun farklı metodlarla kon
 * ### [EMG Sinyalleri ile Kontrol](#myo)
 
 # Yakında
-* Raspberry'ye aktardığımız motor konum bilgilerini Arduino'ya geri göndererek robota hareket ezberletmek.(Tamamlandı)
-* Raspberry'de kaydedilen pozisyonları bir save dosyasında saklayarak programı yeniden açıldığında çalıştırmak.(Tamamlandı)
-* Robotun Gripper'ına bir kalem takarak şekil çizdirmek.(İPTAL) --> Robotun Mekanik Yapısı izin vermediği için iptal edildi.
+* Motor kontrollerini ve ek işlemleri yalnızca raspberry üzerinden yapmak( threading modülü kullanarak birden fazla loop açarak). 
+* Ultrasonik sensör ile robota ek özellikler eklemek. ( Parça bulma, bir engele çarpmama vs.)
 * Bu yazılımı büyük çaplı robotlar üzerinde kullanmak.
 * SIKAR-HA adına özgün robot mekanik tasarımı geliştirmek.
 ## v0.0.1 26 Şubat 2019 | Servo Döndürmek <a name="v0.0.1"></a>
