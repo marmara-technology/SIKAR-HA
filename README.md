@@ -21,10 +21,10 @@ Bu proje Servo motorlar ile hareket ettirilen bir robotun farklı metodlarla kon
 * ### [EMG Sinyalleri ile Kontrol](#myo)
 
 # Yakında
-* Motor kontrollerini ve ek işlemleri yalnızca raspberry üzerinden yapmak( threading modülü kullanarak birden fazla loop açarak). 
-* Ultrasonik sensör ile robota ek özellikler eklemek. ( Parça bulma, bir engele çarpmama vs.)
-* Bu yazılımı büyük çaplı robotlar üzerinde kullanmak.
-* SIKAR-HA adına özgün robot mekanik tasarımı geliştirmek.
+* Motor kontrollerini ve ek işlemleri yalnızca raspberry üzerinden yapmak( threading modülü kullanıp birden fazla loop açarak).(Yakın zamanda)
+* Ultrasonik sensör ile robota ek özellikler eklemek. ( Parça bulma, bir engele çarpmama vs.) (Yakın zamanda)
+* SIKAR-HA adına özgün bir robot mekanik tasarımı geliştirmek.( Orta vadede)
+* Bu yazılımı büyük çaplı robotlar üzerinde kullanmak. ( Uzun vadede)
 ## v0.0.1 26 Şubat 2019 | Servo Döndürmek <a name="v0.0.1"></a>
 Servoya açı parametresi verilip kaydedilir ve servonun "0" pozisyonundan kayıtlı pozisyona döngüde olması sağlanır.
 
