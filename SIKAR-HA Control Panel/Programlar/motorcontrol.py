@@ -1,20 +1,30 @@
 import RPi.GPIO as GPIO
 import time
 GPIO.setwarnings(False)
-GPIO.setmode(GPIO.BOARD) #Numbers GPIOs by physical location
+GPIO.setmode(GPIO.BOARD) 
 class Motor:
   def __init__(self,mnum):
     self.mnum  = mnum
-    
+    self.cout = 0
   def setup(self):
     GPIO.setup(self.mnum,GPIO.OUT)
     self.pwm = GPIO.PWM(self.mnum,50)
     self.pwm.start(0)
+    
 
   def SetAngle(self,angle):  
-    self.duty = sekf.angle / 18 + 2  #Converting angle to duty
-    GPIO.output(self.mnum, True)   # OUTPUT is high along the duty length
+    self.duty = angle / 18 + 2  
+    GPIO.output(self.mnum, True)   
     self.pwm.ChangeDutyCycle(self.duty)
-    time.sleep(1) # wait servo to get there
-    GPIO.output(self.mnum, False)   # OUTPUT is low till starting function again
+    GPIO.output(self.mnum, False) 
     self.pwm.ChangeDutyCycle(0)
+    
+  def run(self,ang):
+    for self.cout in range (0,ang):
+      self.SetAngle(ang)
+      time.sleep(0.005)
+      self.cout +=1
+
+    if self.cout == ang:
+      self.cout =0
+     
